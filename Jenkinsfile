@@ -15,7 +15,7 @@ pipeline{
                 }
 				stage('Build Docker'){
                         steps{
-                                sh 'sudo docker build --tag=nuevaimagen:v1'
+                                sh 'sudo docker build –no-cache --tag=nuevaimagen:v1'
                         }
                 }		
 
