@@ -1,7 +1,6 @@
 pipeline{
-        agent { dockerfile true }
-		
-        stages{
+agent any        
+	stages{
                 stage('Initial Setup'){
                         steps{
                                 sh 'echo Starting..'
